@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Local Assets",
+  "description": "Replaces local asset src urls with production ones.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.jpg",
+    "default_popup": "popup.html"
+  }
+}
