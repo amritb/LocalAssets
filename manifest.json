@@ -4,11 +4,14 @@
   "name": "Local Assets",
   "description": "Replaces local asset src urls with production ones.",
   "version": "1.0",
-/*
+
+  "options_page": "options.html",
+
   "permissions": [
-    "http://code.jquery.com/"
+    "https://code.jquery.com/"
   ],
 
+/*
   "browser_action": {
     "default_icon": "icon.jpg",
     "default_popup": "popup.html"
@@ -17,7 +20,7 @@
   "content_scripts": [
     {
       "matches": ["http://dev.startuphack.com/*"],
-      "js": ["jQuery_1_11.js", "sh.js"]
+      "js": ["jQuery.min.js", "lib.js", "sh.js"]
     }
   ]
 }
