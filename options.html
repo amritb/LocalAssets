@@ -5,34 +5,88 @@
   <script src="jQuery.min.js"></script>
   <script src="options.js"></script>
   <title>LocalAssets Settings</title>
+  <style type="text/css">
+    hr {
+      border-top-color: #2b3e50;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
-  <div class="row" style="margin-top: 70px;">
+  <div class="row" style="">
     <div class="col-md-8 col-md-offset-2">
     <h1 class="text-center" style="margin-bottom: 30px;">LocalAssets Options</h1>
+    <div class="messages"></div>
       <div class="well">
       <fieldset>
         <!-- <legend></legend> -->
           <form role="form" id="settingsForm">
             <div class="form-group">
+
               <div class="row laGroup">
                 <div class="col-md-4">
-                  <input type="url" class="form-control" id="domain" placeholder="Domain">
+                  <input type="text" class="form-control" id="d1" placeholder="Host name">
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="find" placeholder="Find">
+                  <input type="text" class="form-control" id="f1" placeholder="Find">
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="replace" placeholder="Replace">
+                  <input type="text" class="form-control" id="r1" placeholder="Replace">
                 </div>
               </div>
-
-
+              <hr>
+              <div class="row laGroup">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="d2" placeholder="Host name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="f2" placeholder="Find">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="r2" placeholder="Replace">
+                </div>
+              </div>
+              <hr>
+              <div class="row laGroup">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="d3" placeholder="Host name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="f3" placeholder="Find">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="r3" placeholder="Replace">
+                </div>
+              </div>
+              <hr>
+              <div class="row laGroup">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="d4" placeholder="Host name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="f4" placeholder="Find">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="r4" placeholder="Replace">
+                </div>
+              </div>
+              <hr>
+              <div class="row laGroup">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="d5" placeholder="Host name">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="f5" placeholder="Find">
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" id="r5" placeholder="Replace">
+                </div>
+              </div>
+              <br>
             </div>
 
             <div class="text-right">
-              <a href="#">Add a new group</a><br/><br/>
+              <!-- <a href="#">Add a new group</a><br/><br/> -->
               <button type="submit" class="btn btn-success btn-lg btn-block">Save</button>
             </div>
           </form>

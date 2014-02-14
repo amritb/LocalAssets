@@ -1,26 +1,20 @@
 {
   "manifest_version": 2,
 
-  "name": "Local Assets",
+  "name": "LocalAssets",
   "description": "Replaces local asset src urls with production ones.",
   "version": "1.0",
 
   "options_page": "options.html",
 
   "permissions": [
-    "https://code.jquery.com/"
+    "storage"
   ],
 
-/*
-  "browser_action": {
-    "default_icon": "icon.jpg",
-    "default_popup": "popup.html"
-  }
-*/
   "content_scripts": [
     {
-      "matches": ["http://dev.startuphack.com/*"],
-      "js": ["jQuery.min.js", "lib.js", "sh.js"]
+      "matches": ["<all_urls>"],
+      "js": ["jQuery.min.js", "content_script.js"]
     }
   ]
 }
