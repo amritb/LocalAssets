@@ -33,4 +33,26 @@ $(function() {
     $('.messages').html(message);
     event.preventDefault();
   });
+
+  chrome.storage.sync.get('value', function(items){
+    if(items['value']['A1']['d'] !== '') $('#d1').val(items['value']['A1']['d']);
+    if(items['value']['A1']['f'] !== '') $('#f1').val(items['value']['A1']['f']);
+    if(items['value']['A1']['r'] !== '') $('#r1').val(items['value']['A1']['r']);
+
+    if(items['value']['A2']['d'] !== '') $('#d2').val(items['value']['A2']['d']);
+    if(items['value']['A2']['f'] !== '') $('#f2').val(items['value']['A2']['f']);
+    if(items['value']['A2']['r'] !== '') $('#r2').val(items['value']['A2']['r']);
+
+    if(items['value']['A3']['d'] !== '') $('#d3').val(items['value']['A3']['d']);
+    if(items['value']['A3']['f'] !== '') $('#f3').val(items['value']['A3']['f']);
+    if(items['value']['A3']['r'] !== '') $('#r3').val(items['value']['A3']['r']);
+
+    if(items['value']['A4']['d'] !== '') $('#d4').val(items['value']['A4']['d']);
+    if(items['value']['A4']['f'] !== '') $('#f4').val(items['value']['A4']['f']);
+    if(items['value']['A4']['r'] !== '') $('#r4').val(items['value']['A4']['r']);
+
+    if(items['value']['A5']['d'] !== '') $('#d5').val(items['value']['A5']['d']);
+    if(items['value']['A5']['f'] !== '') $('#f5').val(items['value']['A5']['f']);
+    if(items['value']['A5']['r'] !== '') $('#r5').val(items['value']['A5']['r']);
+  });
 });
